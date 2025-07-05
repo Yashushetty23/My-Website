@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Student Portal</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: #111;
+      color: #f2f2f2;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .hero-flex {
+      display: flex;
+      min-height: 80vh;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 4vh 4vw 0 4vw;
+      box-sizing: border-box;
+      gap: 2.5rem;
+      z-index: 1;
+      position: relative;
+    }
+    .hero-left {
+      flex: 1 1 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-center-content {
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+    }
+    .welcome-box {
+      background: #171717;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 24px #0006;
+      padding: 2.5rem 1.5rem 2rem 1.5rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .welcome-box h1 {
+      color: #00cfff;
+      font-size: 2.7rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+    .welcome-box h2 {
+      font-weight: 400;
+      color: #fff;
+      font-size: 1.4rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: .5px;
+    }
+    .welcome-box p {
+      color: #ccc;
+      font-size: 1.08rem;
+      margin-bottom: 1rem;
+    }
+    .cta-btn {
+      display: inline-block;
+      padding: 0.7em 2em;
+      background: #00cfff;
+      color: #181818;
+      border-radius: 2em;
+      border: none;
+      font-weight: 500;
+      margin: 0 0.5em;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      font-size: 1rem;
+      margin-bottom: 0.9em;
+      box-shadow: 0 2px 10px #00cfff33;
+    }
+    .cta-btn:hover {
+      background: #fff;
+      color: #111;
+    }
+    .social-links a img {
+      transition: transform 0.18s;
+      filter: brightness(0.95);
+    }
+    .social-links a:hover img {
+      transform: scale(1.13);
+      filter: drop-shadow(0 0 8px #00cfff);
+    }
+    .hero-right {
+      flex: 1 1 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-right img {
+      width: 320px;
+      max-width: 95vw;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 24px #00cfff33, 0 1px 40px #0008;
+      background: #fff;
+      display: block;
+      border: 5px solid #222;
+    }
+    @media (max-width: 900px) {
+      .hero-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2vh 3vw 0 3vw;
+      }
+      .hero-right img {
+        width: 60vw;
+        height: 60vw;
+        max-width: 280px;
+        max-height: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wave-bg">
+    <svg viewBox="0 0 1440 400" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path fill="#00cfff" fill-opacity="0.12" d="M0,320 C360,400 1080,200 1440,320 L1440,400 L0,400 Z"></path>
+      <path fill="#fff" fill-opacity="0.03" d="M0,340 C400,420 1100,220 1440,340 L1440,400 L0,400 Z"></path>
+    </svg>
+  </div>
+  <header>
+    <div class="logo">STUDENT PORTAL</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+  <main class="hero-flex">
+    <section class="hero-left">
+      <div class="hero-center-content">
+        <div class="welcome-box">
+          <h1>Welcome To My Website </h1>
+          <p>
+           Welcome to my website! Enjoy.
+          </p>
+          <div>
+            <a href="about.html" class="cta-btn">About</a>
+            <a href="skills.html" class="cta-btn">Skills</a>
+            <a href="contact.html" class="cta-btn">Contact</a>
+          </div>
+        </div>
+        <div class="social-links" style="margin-top:1.5rem;">
+          <a href="https://github.com/Yashushetty23" target="_blank" title="GitHub" style="margin-right:1rem;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="34" height="34" style="vertical-align:middle; filter: invert(1);">
+          </a>
+          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME/" target="_blank" title="LinkedIn">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="34" height="34" style="vertical-align:middle;">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="hero-right">
+      <img src="yashu.jpg" alt="Profile Image" />
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | My Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: #111;
+      color: #f2f2f2;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .wave-bg {
+      position: absolute;
+      top: 0; left: 0; width: 100%; z-index: 0; pointer-events: none;
+    }
+    .wave-bg svg {
+      width: 100vw;
+      height: 400px;
+      display: block;
+      filter: brightness(0.3);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.2rem 3vw;
+      background: #181818e0;
+      box-shadow: 0 2px 16px #00000022;
+      position: relative;
+      z-index: 2;
+    }
+    .logo {
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.2em;
+      font-size: 1.1em;
+      transition: color 0.18s;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #00cfff;
+    }
+    .menu-icon {
+      display: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    .center-content {
+      text-align: center;
+      width: 100%;
+      max-width: 600px;
+      margin: 60px auto 0 auto;
+      z-index: 1;
+      position: relative;
+    }
+    .about-box {
+      background: #171717;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 24px #0006;
+      padding: 2.5rem 1.5rem 2rem 1.5rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .about-box h1 {
+      color: #00cfff;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+    .about-box p {
+      color: #ccc;
+      font-size: 1.08rem;
+      margin-bottom: 1rem;
+    }
+    .linkedin-link {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    .linkedin-link a {
+      color: #00cfff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .linkedin-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="wave-bg">
+    <svg viewBox="0 0 1440 400" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path fill="#00cfff" fill-opacity="0.12" d="M0,320 C360,400 1080,200 1440,320 L1440,400 L0,400 Z"></path>
+      <path fill="#fff" fill-opacity="0.03" d="M0,340 C400,420 1100,220 1440,340 L1440,400 L0,400 Z"></path>
+    </svg>
+  </div>
+  <header>
+    <div class="logo">LOGO HERE</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+  <main class="center-content">
+    <div class="about-box">
+      <!-- Profile Image Start -->
+      <div style="display: flex; justify-content: center; margin-bottom: 2rem;">
+        <img src="yashu.jpg" alt="Profile Image" style="width: 220px; height: 220px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 24px rgba(32,136,255,0.19); background: #fff;">
+      </div>
+      <!-- Profile Image End -->
+      <h1>About Us</h1>
+      <p>
+        Welcome to My Website<br>
+Hi, I’m Yashaswini Shetty, an MCA student at SJEC in Mangalore.<br>
+I’m interested in coding, enjoy making websites, and love learning new things.<br>
+I like reading, sketching, and spending time in nature.<br>
+I hope to grow as a creative person and do good work.<br>
+Feel free to check my portfolio and contact me if you’d like to work together!
+      </p>
+      <div class="linkedin-link">
+        🌐 Connect with me on <a href="https://www.linkedin.com/in/yashaswinishetty425477345" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
